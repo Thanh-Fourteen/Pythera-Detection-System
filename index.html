@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pythera AI Detection System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Pythera AI Detection System - An intelligent detection platform powered by artificial intelligence."
+  />
+
+  <!-- Fonts & basic style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <!-- NAV -->
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="nav-logo">
+          <div class="nav-logo-badge"></div>
+          <div>
+            <div class="nav-title">Pythera AI Detection System</div>
+            <div class="nav-subtitle">AI-powered vision platform for detection & monitoring</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#overview" class="nav-link">Overview</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#tech" class="nav-link">Technology</a>
+          <a href="#demo" class="nav-link nav-link-primary">Demo Videos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="hero-eyebrow">
+                <div class="hero-eyebrow-dot"></div>
+                PYTHERA · AI DETECTION
+                <span style="opacity: 0.7;">v1.0</span>
+              </div>
+              <h1 class="hero-title">
+                A <span>Multi-task AI Vision</span> platform for advanced <span>Computer Vision</span> applications.
+              </h1>
+              <p class="hero-tagline">
+                Pythera integrates six core capabilities: Object Detection, Multi-Object Tracking, Line Crossing & Counting, Human Pose Estimation,
+                Fall Detection, Fire/Smoke Alert, and Face Recognition — optimized for real-time monitoring.
+              </p>
+
+              <div class="hero-metadata">
+                <div class="meta-chip">
+                  <span class="meta-dot"></span>
+                  Real-time inference & streaming
+                </div>
+                <div class="meta-chip">
+                  <span class="meta-dot"></span>
+                  Data & Input Pipeline
+                </div>
+                <div class="meta-chip">
+                    <span class="meta-dot"></span>
+                    Model Optimization & Acceleration
+                </div>
+                <div class="meta-chip">
+                    <span class="meta-dot"></span>
+                    System Architecture & Scalability
+                </div>
+                <div class="meta-chip">
+                    <span class="meta-dot"></span>
+                    Deployment & MLOps
+                </div>
+              </div>
+
+              <div class="hero-actions">
+                <a href="#demo" class="btn btn-primary">
+                  <span class="btn-icon">▶</span>
+                  Watch Demo Videos
+                </a>
+                <a href="#overview" class="btn btn-outline">
+                  <span class="btn-icon">ℹ</span>
+                  View Project Details
+                </a>
+                <a href="#diagrams" class="btn btn-outline">
+                    <span class="btn-icon">🏗</span>
+                    View System Architecture
+                  </a>
+              </div>
+              <p class="hero-caption">
+                Built with a focus on <span class="highlight">performance, accuracy</span>, and <span class="highlight">scalability</span>.
+              </p>
+            </div>
+
+            <!-- Visual panel removed per request -->
+          </div>
+        </div>
+      </section>
+
+      <!-- OVERVIEW -->
+      <section id="overview">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="pill-label">
+                <span class="pill-dot"></span>
+                Project Overview
+              </div>
+              <h2 class="section-title mt-2">Problem Statement & Objectives</h2>
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="card">
+              <h3 class="card-headline">Real-World Challenges</h3>
+              <p class="card-description">
+                Traditional CCTV systems only record footage without providing real-time alerts. Enterprises require
+                immediate detection of objects, tracking, people counting, fall events, fire/smoke, and facial recognition
+                with minimal latency for timely response.
+              </p>
+              <ul class="bullet-list">
+                <li>Heterogeneous camera streams with varying image quality.</li>
+                <li>Large volumes of video feeds, impossible to monitor manually 24/7.</li>
+                <li>Need for a unified platform supporting multiple vision tasks (detection, tracking, counting, pose, face, fire).</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3 class="card-headline">Project Objectives</h3>
+              <p class="card-description">
+                Develop a unified AI vision platform that is easy to deploy, highly scalable, and fast enough for real-time applications.
+              </p>
+              <ul class="bullet-list">
+                <li>High accuracy across six tasks: detection, tracking, counting, pose/fall, fire/smoke, and face recognition.</li>
+                <li>Low latency and stable performance when processing multiple camera streams concurrently.</li>
+                <li>Flexible deployment: on-premise (GPU/CPU) or cloud; rapid API integration.</li>
+              </ul>
+              <div class="badge-row mt-3">
+                <span class="badge">Real-time</span>
+                <span class="badge">Multi-task Vision</span>
+                <span class="badge">Deployment-friendly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="pill-label">
+                <span class="pill-dot"></span>
+                Core Features
+              </div>
+              <h2 class="section-title mt-2">What System Can Do</h2>
+            </div>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="card-label">01 · Detection</div>
+              <div class="card-title-sm">Multi-class Object Detection</div>
+              <p class="card-text-sm">Accurate object localization with bounding boxes and confidence scores.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-label">02 · Tracking</div>
+              <div class="card-title-sm">Multi-Object Tracking</div>
+              <p class="card-text-sm">Stable ID assignment and trajectory tracking across frames.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-label">03 · Counting</div>
+              <div class="card-title-sm">Line Crossing & Object Counting</div>
+              <p class="card-text-sm">Precise counting based on virtual zones/lines for traffic analytics and access control.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-label">04 · Pose</div>
+              <div class="card-title-sm">Pose Estimation & Fall Detection</div>
+              <p class="card-text-sm">Human keypoint estimation and fall event detection for workplace safety alerts.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-label">05 · Fire Alert</div>
+              <div class="card-title-sm">Fire & Smoke Detection</div>
+              <p class="card-text-sm">Early detection of fire and smoke for rapid response.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-label">06 · Face Recognition</div>
+              <div class="card-title-sm">Face Recognition & Verification</div>
+              <p class="card-text-sm">Identity verification supporting whitelist/blacklist and access control.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SYSTEM DIAGRAMS -->
+      <section id="diagrams">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="pill-label">
+                <span class="pill-dot"></span>
+                System Architecture
+              </div>
+              <h2 class="section-title mt-2">High-Level & Detailed Diagrams</h2>
+            </div>
+          </div>
+
+          <div class="media-grid">
+            <div class="media-card">
+              <img src="images/overview.png" alt="High-level system overview diagram" />
+              <div class="media-caption">
+                <strong>High-Level System Overview</strong><br>
+              </div>
+            </div>
+            <div class="media-card">
+              <img src="images/system.png" alt="Detailed processing pipeline diagram" />
+              <div class="media-caption">
+                <strong>Detailed Processing Pipeline</strong><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- METHODS & ARCHITECTURE -->
+      <section id="methods">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="pill-label">
+                <span class="pill-dot"></span>
+                Methodology & Architecture
+              </div>
+              <h2 class="section-title mt-2">How System Was Built</h2>
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="card">
+              <h3 class="card-headline">Pipeline & Methodology</h3>
+              <p class="card-description">
+                Unified computer vision pipeline handling multiple tasks on the same video stream:
+              </p>
+              <ul class="bullet-list">
+                <li>Video ingestion from cameras/RTSP streams.</li>
+                <li>Preprocessing: resizing, lighting normalization, noise reduction, aspect ratio preservation.</li>
+                <li>Multi-task inference: detection, tracking, counting, pose/fall, fire/smoke, face recognition.</li>
+                <li>Containerized deployment (Docker) with TensorRT acceleration.</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3 class="card-headline">System Architecture</h3>
+              <p class="card-description">
+                Modular, loosely coupled components for scalability and model interchangeability:
+              </p>
+              <ul class="bullet-list">
+                <li><strong>Ingestion Layer</strong>: RTSP/camera stream handling and frame normalization.</li>
+                <li><strong>AI Core</strong>: Core inference modules for detection, tracking, counting, pose/fall, fire, and face.</li>
+                <li><strong>API & Service Layer</strong>: REST/gRPC endpoints for results and alerts.</li>
+              </ul>
+              <div class="badge-row mt-3">
+                <span class="badge">Modular Design</span>
+                <span class="badge">Scalable Microservices</span>
+                <span class="badge">Cloud / Edge Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGIES & DATA -->
+      <section id="tech">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="pill-label">
+                <span class="pill-dot"></span>
+                Technologies & Stack
+              </div>
+              <h2 class="section-title mt-2">The Technical Foundation of System</h2>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-headline">Core Technologies</h3>
+            <div class="tech-grid mt-2">
+              <div class="tech-card">
+                <div class="card-label">Modeling</div>
+                <div class="card-title-sm">PyTorch / PyTorch Lightning</div>
+                <p class="card-text-sm">
+                  Training deep learning models for object recognition and related tasks.
+                </p>
+              </div>
+              <div class="tech-card">
+                <div class="card-label">Serving</div>
+                <div class="card-title-sm">FastAPI / gRPC</div>
+                <p class="card-text-sm">
+                  High-performance API exposure supporting batch inference and streaming.
+                </p>
+              </div>
+              <div class="tech-card">
+                <div class="card-label">Infra</div>
+                <div class="card-title-sm">Docker / TensorRT</div>
+                <p class="card-text-sm">
+                  Containerized deployment with auto-scaling on cloud or on-premise environments.
+                </p>
+              </div>
+              <div class="tech-card">
+                <div class="card-label">Observability</div>
+                <div class="card-title-sm">Prometheus / Grafana</div>
+                <p class="card-text-sm">
+                  Monitoring model performance, latency, throughput, and alert frequency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNIQUES & ACCELERATION -->
+      <section id="techniques">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="pill-label">
+                <span class="pill-dot"></span>
+                Optimization & Acceleration Techniques
+              </div>
+              <h2 class="section-title mt-2">Inference Optimization and Deployment Stack</h2>
+            </div>
+            <p class="section-kicker">
+              Optimized inference and streaming pipeline: ONNX, TensorRT, Docker, Kafka, gRPC, Triton, RTSP/FFmpeg, CUDA.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-headline">Acceleration & Infrastructure Stack</h3>
+            <p class="card-description">
+              Multi-layer optimization combining model format, GPU acceleration, containerization, streaming, and RPC.
+            </p>
+            <div class="tech-grid">
+              <div class="tech-item">
+                <div class="tech-logo">
+                  <img src="https://miro.medium.com/1*F7bYkmBtbZwyWAB1g6E4JA.png" alt="ONNX">
+                </div>
+                <div class="tech-content">
+                  <strong>ONNX</strong>: Model format standardization for cross-platform inference.
+                </div>
+              </div>
+            
+              <div class="tech-item">
+                <div class="tech-logo">
+                  <img src="https://docscontent.nvidia.com/dims4/default/31e9ab4/2147483647/strip/true/crop/980x552+105+0/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk3-prod-nvidia-docs.s3.us-west-2.amazonaws.com%2Fbrightspot%2F1e%2Fcb%2F053bae0a4f15a0672037a721be67%2Ftensorrt-logo.png" alt="TensorRT">
+                </div>
+                <div class="tech-content">
+                  <strong>TensorRT</strong>: GPU-optimized engine compilation for reduced latency.
+                </div>
+              </div>
+            
+              <div class="tech-item">
+                <div class="tech-logo">
+                  <img src="https://assets.nvidiagrid.net/ngc/logos/Triton-Inference-Server.png" alt="Triton Inference Server">
+                </div>
+                <div class="tech-content">
+                  <strong>Triton Inference Server</strong>: Efficient model serving with dynamic batching and ensemble support.
+                </div>
+              </div>
+            
+              <div class="tech-item">
+                <div class="tech-logo">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Nvidia_CUDA_Logo.jpg" alt="CUDA">
+                </div>
+                <div class="tech-content">
+                  <strong>CUDA</strong>: GPU parallel computing for real-time processing.
+                </div>
+              </div>
+            
+              <div class="tech-item">
+                <div class="tech-logo">
+                  <img src="https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo.png" alt="Docker">
+                </div>
+                <div class="tech-content">
+                  <strong>Docker</strong>: Containerization for consistent deployment across environments.
+                </div>
+              </div>
+            
+              <div class="tech-item">
+                <div class="tech-logo">
+                  <img src="https://svn.apache.org/repos/asf/kafka/site/logos/originals/png/WIDE%20-%20Black%20on%20Transparent.png" alt="Kafka">
+                </div>
+                <div class="tech-content">
+                  <strong>Kafka</strong>: Distributed streaming and event queuing for ingestion & alerts.
+                </div>
+              </div>
+            
+              <div class="tech-item">
+                <div class="tech-logo">
+                  <img src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2019/11/grpc-icon-color-1.png" alt="gRPC">
+                </div>
+                <div class="tech-content">
+                  <strong>gRPC</strong>: High-performance RPC for inference results and alerts.
+                </div>
+              </div>
+            
+              <div class="tech-item">
+                <div class="tech-logo">
+                  <img src="https://download.logo.wine/logo/FFmpeg/FFmpeg-Logo.wine.png" alt="RTSP + FFmpeg">
+                </div>
+                <div class="tech-content">
+                  <strong>RTSP + FFmpeg</strong>: Camera stream ingestion and transcoding as needed.<br>
+                  <small>(FFmpeg logo used to represent the RTSP/FFmpeg stack)</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEMO SECTION -->
+      <section id="demo">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="pill-label">
+                <span class="pill-dot"></span>
+                Demo Videos
+              </div>
+              <h2 class="section-title mt-2">Pythera in Action</h2>
+            </div>
+          </div>
+
+          <div class="videos-grid">
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/W6FEI7lp7R4" title="Detection demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-footer">
+                <div>
+                  <div class="highlight">Object Detection</div>
+                  <div>Multi-class detection with bounding boxes and confidence scores.</div>
+                </div>
+                <a class="video-link" href="https://www.youtube.com/watch?v=W6FEI7lp7R4" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+              </div>
+            </div>
+
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/2IBurZ8vk-g" title="Counting demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-footer">
+                <div>
+                  <div class="highlight">Counting</div>
+                  <div>Object counting within defined zones.</div>
+                </div>
+                <a class="video-link" href="https://youtu.be/2IBurZ8vk-g" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+              </div>
+            </div>
+
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/fNlVtrXrz-4" title="Pose demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-footer">
+                <div>
+                  <div class="highlight">Pose Estimation</div>
+                  <div>Human skeleton keypoint detection supporting fall recognition.</div>
+                </div>
+                <a class="video-link" href="https://www.youtube.com/watch?v=fNlVtrXrz-4" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+              </div>
+            </div>
+
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/z_1IHlegQlU" title="Fall recognition demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-footer">
+                <div>
+                  <div class="highlight">Fall Detection</div>
+                  <div>Real-time fall event alerts for workplace safety.</div>
+                </div>
+                <a class="video-link" href="https://www.youtube.com/watch?v=z_1IHlegQlU" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+              </div>
+            </div>
+
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/ns_uYhrnmxI" title="Fall recognition demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-footer">
+                <div>
+                  <div class="highlight">Fall Detection</div>
+                  <div>Real-time fall event alerts for workplace safety.</div>
+                </div>
+                <a class="video-link" href="https://www.youtube.com/watch?v=ns_uYhrnmxI" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+              </div>
+            </div>
+
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/3xKrN7wr0OE" title="Fire alert demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-footer">
+                <div>
+                  <div class="highlight">Fire & Smoke Alert</div>
+                  <div>Early fire and smoke detection.</div>
+                </div>
+                <a class="video-link" href="https://www.youtube.com/watch?v=3xKrN7wr0OE" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+              </div>
+            </div>
+
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/TqbvBV3_FyQ" title="Face recognition demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="video-footer">
+                <div>
+                  <div class="highlight">Face Recognition</div>
+                  <div>Identity verification, whitelist/blacklist, and access control.</div>
+                </div>
+                <a class="video-link" href="https://www.youtube.com/watch?v=TqbvBV3_FyQ" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <span>© <span id="year"></span> Pythera AI Detection System.</span>
+          <span class="muted">
+            Project showcase · Source code is closed; only demos and documentation are shared publicly.
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
