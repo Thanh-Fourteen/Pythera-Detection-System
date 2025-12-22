@@ -25,7 +25,7 @@
     <header class="nav">
       <div class="nav-inner">
         <div class="nav-logo">
-          <div class="nav-logo-badge"></div>
+          <img src="images/logo.jpg" alt="Pythera AI" class="nav-logo-badge">
           <div>
             <div class="nav-title">Pythera AI Detection System</div>
             <div class="nav-subtitle">AI-powered vision platform for detection & monitoring</div>
@@ -52,7 +52,7 @@
                 <span style="opacity: 0.7;">v1.0</span>
               </div>
               <h1 class="hero-title">
-                A <span>Multi-task AI Vision</span> platform for advanced <span>Computer Vision</span> applications.
+                A <span>Multi-task AI Vision</span> platform for advanced <span>Computer Vision</span> applications
               </h1>
               <p class="hero-tagline">
                 Pythera integrates six core capabilities: Object Detection, Multi-Object Tracking, Line Crossing & Counting, Human Pose Estimation,
@@ -96,9 +96,6 @@
                     View System Architecture
                   </a>
               </div>
-              <p class="hero-caption">
-                Built with a focus on <span class="highlight">performance, accuracy</span>, and <span class="highlight">scalability</span>.
-              </p>
             </div>
 
             <!-- Visual panel removed per request -->
@@ -122,12 +119,12 @@
           <div class="two-col">
             <div class="card">
               <h3 class="card-headline">Real-World Challenges</h3>
-              <p class="card-description">
+              <p class="card-description text-justify">
                 Traditional CCTV systems only record footage without providing real-time alerts. Enterprises require
                 immediate detection of objects, tracking, people counting, fall events, fire/smoke, and facial recognition
                 with minimal latency for timely response.
               </p>
-              <ul class="bullet-list">
+              <ul class="bullet-list text-justify">
                 <li>Heterogeneous camera streams with varying image quality.</li>
                 <li>Large volumes of video feeds, impossible to monitor manually 24/7.</li>
                 <li>Need for a unified platform supporting multiple vision tasks (detection, tracking, counting, pose, face, fire).</li>
@@ -136,10 +133,10 @@
 
             <div class="card">
               <h3 class="card-headline">Project Objectives</h3>
-              <p class="card-description">
+              <p class="card-description text-justify">
                 Develop a unified AI vision platform that is easy to deploy, highly scalable, and fast enough for real-time applications.
               </p>
-              <ul class="bullet-list">
+              <ul class="bullet-list text-justify">
                 <li>High accuracy across six tasks: detection, tracking, counting, pose/fall, fire/smoke, and face recognition.</li>
                 <li>Low latency and stable performance when processing multiple camera streams concurrently.</li>
                 <li>Flexible deployment: on-premise (GPU/CPU) or cloud; rapid API integration.</li>
@@ -167,7 +164,7 @@
             </div>
           </div>
 
-          <div class="features-grid">
+          <div class="features-grid text-justify">
             <div class="feature-card">
               <div class="card-label">01 · Detection</div>
               <div class="card-title-sm">Multi-class Object Detection</div>
@@ -250,7 +247,7 @@
             </div>
           </div>
 
-          <div class="two-col">
+          <div class="two-col text-justify">
             <div class="card">
               <h3 class="card-headline">Pipeline & Methodology</h3>
               <p class="card-description">
@@ -335,7 +332,7 @@
 
       <!-- TECHNIQUES & ACCELERATION -->
       <section id="techniques">
-        <div class="container">
+        <div class="container text-justify">
           <div class="section-header">
             <div>
               <div class="pill-label">
@@ -432,6 +429,98 @@
         </div>
       </section>
 
+      <!-- PERFORMANCE EVALUATION -->
+      <section id="evaluation">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="pill-label">
+                <span class="pill-dot"></span>
+                Performance Evaluation
+              </div>
+              <h2 class="section-title mt-2">Quantitative Benchmarks & Analysis</h2>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-headline">Evaluation Methodology</h3>
+            <p class="card-description text-justify">
+              Each vision module was benchmarked independently and in multi-task configuration on an NVIDIA RTX 2080 Ti (12 GB) with TensorRT FP16 engines. 
+              Metrics were collected using Per Analyzer, measuring end-to-end inference latency, and throughput (FPS).
+            </p>
+          </div>
+
+          <div class="card mt-4 ">
+            <h3 class="card-headline">Key Metrics Explained</h3>
+            <ul class="bullet-list text-justify">
+              <li>
+                <strong>Concurrency</strong>: Number of simultaneous requests sent to the Triton server. Higher values increase load on GPU/CPU, simulating real-world multi-stream scenarios.
+              </li>
+              <li>
+                <strong>Throughput (inferences/second)</strong>: Number of successful inferences processed per second. Higher is better — indicates overall system efficiency.
+              </li>
+              <li>
+                <strong>Batch Size (bs4, bs6, bs8, bs16)</strong>: Number of frames/samples grouped into a single inference call. Larger batches improve throughput when GPU resources are available, but excessive batching can lead to queueing or OOM if resources are saturated.
+              </li>
+              <li>
+                <strong>Chart Interpretation</strong>: Each line on the graphs represents throughput for a specific batch size as concurrency increases. Optimal operating points show peak throughput before saturation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="media-grid mt-4">
+            <div class="media-card">
+              <img src="images/detection.png" alt="Per Analyzer benchmark" /> <!-- Thay bằng tên file thực tế -->
+              <div class="media-caption">
+                <strong>Model Detection</strong><br>
+              </div>
+            </div>
+            <div class="media-card">
+              <img src="images/reid.png" alt="Per Analyzer benchmark" /> <!-- Thay bằng tên file thực tế -->
+              <div class="media-caption">
+                <strong>Model ReID</strong><br>
+              </div>
+            </div>
+            <div class="media-card">
+              <img src="images/pose.png" alt="Per Analyzer benchmark" /> <!-- Thay bằng tên file thực tế -->
+              <div class="media-caption">
+                <strong>Model Pose Estimation</strong><br>
+              </div>
+            </div>
+            <div class="media-card">
+              <img src="images/action_recognition.png" alt="Per Analyzer benchmark" /> <!-- Thay bằng tên file thực tế -->
+              <div class="media-caption">
+                <strong>Model Action Recognition</strong><br>
+              </div>
+            </div>
+            <div class="media-card">
+              <img src="images/face_detection.png" alt="Per Analyzer benchmark" /> <!-- Thay bằng tên file thực tế -->
+              <div class="media-caption">
+                <strong>Model Face Detection</strong><br>
+              </div>
+            </div>
+            <div class="media-card">
+              <img src="images/face_recognition.png" alt="Per Analyzer benchmark" /> <!-- Thay bằng tên file thực tế -->
+              <div class="media-caption">
+                <strong>Model Face Recognition</strong><br>
+              </div>
+            </div>
+            <div class="media-card">
+              <img src="images/fire_detection.png" alt="Per Analyzer benchmark" /> <!-- Thay bằng tên file thực tế -->
+              <div class="media-caption">
+                <strong>Model Fire Detection</strong><br>
+              </div>
+            </div>
+            <div class="media-card">
+              <img src="images/fire_classification.png" alt="Per Analyzer benchmark" /> <!-- Thay bằng tên file thực tế -->
+              <div class="media-caption">
+                <strong>Model Fire Classifier</strong><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- DEMO SECTION -->
       <section id="demo">
         <div class="container">
@@ -485,7 +574,7 @@
               </div>
             </div>
 
-            <div class="video-card">
+            <!-- <div class="video-card">
               <div class="video-frame">
                 <iframe src="https://www.youtube.com/embed/z_1IHlegQlU" title="Fall recognition demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
@@ -496,7 +585,7 @@
                 </div>
                 <a class="video-link" href="https://www.youtube.com/watch?v=z_1IHlegQlU" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
               </div>
-            </div>
+            </div> -->
 
             <div class="video-card">
               <div class="video-frame">

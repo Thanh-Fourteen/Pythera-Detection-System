@@ -219,6 +219,7 @@ img {
   color: var(--muted);
   max-width: 100%;
   margin-bottom: 22px;
+  text-align: center;
 }
 
 .hero-metadata {
@@ -227,6 +228,7 @@ img {
   gap: 10px;
   margin-bottom: 22px;
   max-width: 100%;
+  justify-content: center;
 }
 
 .meta-chip {
@@ -256,6 +258,7 @@ img {
   align-items: center;
   margin-bottom: 14px;
   max-width: 100%;
+  justify-content: center;
 }
 
 .btn {
@@ -792,7 +795,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  align-items: stretch;        /* Quan trọng: làm 2 card cao bằng nhau */
+  align-items: stretch;
 }
 
 .media-card {
@@ -803,17 +806,17 @@ section {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%;                /* Card chiếm hết chiều cao của grid item */
+  height: 100%;
 }
 
 .media-card img {
-  flex: 1;                     /* Ảnh chiếm hết phần còn lại sau caption */
+  flex: 1;
   width: 100%;
   height: auto;
-  object-fit: contain;         /* Giữ nguyên tỉ lệ, không bị méo */
+  object-fit: contain;
   object-position: center;
   background: #0b1120;
-  padding: 24px;               /* Khoảng thở đẹp */
+  padding: 24px; 
   box-sizing: border-box;
 }
 
@@ -977,16 +980,16 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: center; /* hoặc left tùy layout */
+  justify-content: center;
 }
 
 .logo-badge {
-  width: 120px;     /* điều chỉnh kích thước badge */
-  height: 60px;     /* giữ tỷ lệ */
+  width: 120px;
+  height: 60px;   
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f8f9fa; /* nền nhẹ */
+  background: #f8f9fa;
   border-radius: 8px;
   padding: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -1000,7 +1003,7 @@ section {
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cột đều nhau */
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px 32px;
   margin-top: 16px;
 }
@@ -1013,7 +1016,7 @@ section {
 
 .tech-logo {
   flex-shrink: 0;
-  width: 100px; /* điều chỉnh kích thước logo */
+  width: 100px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -1035,9 +1038,14 @@ section {
   line-height: 1.5;
 }
 
-/* Responsive: trên mobile chuyển về 1 cột */
 @media (max-width: 768px) {
   .tech-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.text-justify {
+  text-align: justify;
+  hyphens: auto;
+  text-align-last: left;
 }
